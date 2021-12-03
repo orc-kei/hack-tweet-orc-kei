@@ -66,5 +66,3 @@
 | description            |                                                                                                                                |
 | next expectation       |                                                                                                                                |
 | ER                     | er.dioに記載                                                                                                                    |
-
-

@@ -1,0 +1,10 @@
+<div class="card">
+  <%= link_to image_tag(hack.image, class: :card__img ),hack_path(hack.id)  %>
+  <div class="card__body">
+    <%= link_to "#{hack.title}", hack_path(hack.id), class: :card__title%>
+    <p class="card__summary">
+      <%= "#{hack.catch_copy}" %>
+    </p>
+    <%= link_to "by #{hack.user.name}", user_path(hack.user), class: :card__user %>
+  </div>
+</div>

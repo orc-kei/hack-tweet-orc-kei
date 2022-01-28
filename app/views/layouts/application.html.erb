@@ -20,14 +20,14 @@
           </div>
             <% if user_signed_in? %>
             <div class="nav__right">
-            <%= link_to "ログアウト", destroy_user_session_path, class: :nav__logout, method: :delete %>
-             <%= link_to "New Proto", new_hack_path, class: :nav__btn %>
+            <%= link_to "Log Out", destroy_user_session_path, class: :nav__logout, method: :delete %>
+             <%= link_to "New Hack", new_hack_path, class: :nav__btn %>
            </div> 
           <% else %>
          
             <div class="nav__right">
-              <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
-              <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
+              <%= link_to "Log In", new_user_session_path, class: :nav__btn %>
+              <%= link_to "Sign Up", new_user_registration_path, class: :nav__btn %>
             </div>
           <% end %>
         </div>
@@ -35,7 +35,7 @@
     </header>
     <%= yield %>
     <footer class="footer">
-      <p class="copyright">Copyright © PROTO SPACE All rights reserved.</p>
+      <p class="copyright">Copyright © Hack Tweet All rights reserved.</p>
     </footer>
   </body>
 </html>

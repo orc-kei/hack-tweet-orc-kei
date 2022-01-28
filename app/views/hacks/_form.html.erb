@@ -1,25 +1,25 @@
 <%= form_with model: @hack, local: true do |f|%>
   <div class="field">
-    <%= f.label :title, "プロトタイプの名称" %><br />
+    <%= f.label :title, "Hack *Point(要点)" %><br />
     <%= f.text_field :title, id:"prototype_title" %>
   </div>
 
   <div class="field">
-    <%= f.label :catch_copy, "キャッチコピー" %><br />
+    <%= f.label :catch_copy, "Hack *Reason(理由)" %><br />
     <%= f.text_area :catch_copy, class: :form__text, id:"prototype_catch_copy" %>
   </div>
 
   <div class="field">
-    <%= f.label :concept, "コンセプト" %><br />
+    <%= f.label :concept, "Hack *Example(例)" %><br />
     <%= f.text_area :concept, class: :form__text, id:"prototype_concept" %>
   </div>
 
   <div class="field">
-    <%= f.label :image, "プロトタイプの画像" %><br />
+    <%= f.label :image, "Hack image" %><br />
     <%= f.file_field :image, id:"prototype_image" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "保存する", class: :form__btn  %>
+    <%= f.submit "Save", class: :form__btn  %>
   </div>
 <% end %>

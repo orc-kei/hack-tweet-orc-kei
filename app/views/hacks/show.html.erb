@@ -16,13 +16,13 @@
       </div>
       <div class="prototype__body">
         <div class="prototype__detail">
-          <p class="detail__title">キャッチコピー</p>
+          <p class="detail__title">Hack Reson</p>
           <p class="detail__message">
             <%= @hack.catch_copy %>
           </p>
         </div>
         <div class="prototype__detail">
-          <p class="detail__title">コンセプト</p>
+          <p class="detail__title">Hack Example</p>
           <p class="detail__message">
             <%= @hack.concept %>
           </p>
@@ -32,11 +32,11 @@
           <% if user_signed_in? %>
            <%= form_with(model: [@hack,@comment], local: true) do |f|%>
             <div class="field">
-               <%= f.label :content, "コメント" %><br />
+               <%= f.label :content, "comment" %><br />
                <%= f.text_field :content, id:"comment_content" %>
             </div>
             <div class="actions">
-               <%= f.submit "送信する", class: :form__btn  %>
+               <%= f.submit "Send", class: :form__btn  %>
             </div>
              <% end %>
           <% end %>
